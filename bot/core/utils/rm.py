@@ -13,7 +13,8 @@ async def rm_dir(root: str = f"{Config.DOWNLOAD_DIR}"):
     """
 
     try:
-        shutil.rmtree(root)
+        pass
+#         shutil.rmtree(root)
     except Exception as e:
         Config.LOGGER.getLogger(__name__).error(e)
 
@@ -25,6 +26,7 @@ async def rm_file(file_path: str):
     :param file_path: Pass File Path
     """
     try:
-        await aiofiles.os.remove(file_path)
+        pass
+#         await aiofiles.os.remove(file_path)
     except:
         pass
